@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanale</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Google fonts
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94f0abe8f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- HTML for the stats button -->
+    <div class="contaainer">
+        <h1 class="title">Hanale</h1>
+        <button id="statsButton">
+            <i class="fa-solid fa-chart-simple"></i> 
+        </button>
+    </div>
+    <hr style="width: 40%;">
+    <!-- HTML for the popup container -->
+    <div id="popupContainer" class="popup-container">
+        <div id="graphContainer" class="graph-container">
+            <canvas id="graphCanvas"></canvas>
+        </div>
+        <div class="contaainer">
+            <button id="closeButton">Close</button>
+        </div>
+    </div>
+    <div id="backgroundOverlay"></div>
+
+   <div id="game" style="margin-bottom: -10px; margin-top: -120px">
+        <div class="grid">
+
+        </div>
+   </div>
+   <div id="keyboard">
+    <div class="group">
+        <button class="keyMod" id="key1">1</button>
+        <button class="keyMod" id="key2">2</button>
+        <button class="keyMod" id="key3">3</button>
+        <button class="keyMod" id="key4">4</button>
+        <button class="keyMod" id="key5">5</button>
+        <button class="keyMod" id="key6">6</button>
+        <button class="keyMod" id="key7">7</button>
+        <button class="keyMod" id="key8">8</button>
+        <button class="keyMod" id="key9">9</button>
+        <button class="keyMod" id="key0">0</button>
+    </div>
+    <div class="group">
+        <button class="key" id="keyQ">Q</button>
+        <button class="key" id="keyW">W</button>
+        <button class="key" id="keyE">E</button>
+        <button class="key" id="keyR">R</button>
+        <button class="key" id="keyT">T</button>
+        <button class="key" id="keyY">Y</button>
+        <button class="key" id="keyU">U</button>
+        <button class="key" id="keyI">I</button>
+        <button class="key" id="keyO">O</button>
+        <button class="key" id="keyP">P</button>
+    </div>
+    <div class="group">
+        <button class="key" id="keyA">A</button>
+        <button class="key" id="keyS">S</button>
+        <button class="key" id="keyD">D</button>
+        <button class="key" id="keyF">F</button>
+        <button class="key" id="keyG">G</button>
+        <button class="key" id="keyH">H</button>
+        <button class="key" id="keyJ">J</button>
+        <button class="key" id="keyK">K</button>
+        <button class="key" id="keyL">L</button>
+    </div>
+    <div class="group">
+        <button class="key" id="keyZ">Z</button>
+        <button class="key" id="keyX">X</button>
+        <button class="key" id="keyC">C</button>
+        <button class="key" id="keyV">V</button>
+        <button class="key" id="keyB">B</button>
+        <button class="key" id="keyN">N</button>
+        <button class="key" id="keyM">M</button>
+    </div>
+  </div>
+   <script src = "script.js" type = "module"></script>
+</body>
+<script>src="script.js"</script>
+</html>
